@@ -17,7 +17,8 @@ console.log(supplyChanges[1]);
 //    array & console.log the value removed.
 console.log('4. Removed item:');
 supplyChanges.pop();
-console.log(supplyChanges);
+removedElement = supplyChanges.pop();
+console.log(removedElement);
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Adding 25 to supplyChanges.');
 supplyChanges.push(25);
@@ -28,6 +29,22 @@ console.log(supplyChanges);
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.' 
 console.log('6. Showing supplyChanges...');
+for(let i = 0; i < supplyChanges.length;i++){
+    console.log(supplyChanges[i]);
+    
+    if(supplyChanges[i] > 0){
+        console.log(i);
+    }
+    else if(supplyChanges[i] === 0){
+        console.log(i);
+    }
+    else if(supplyChanges[i]< 0){
+console.log(i);
+    }
+   
+}
+
+
 
 
 // STRETCH GOALS
