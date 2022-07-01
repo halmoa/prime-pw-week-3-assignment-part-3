@@ -16,7 +16,7 @@ console.log(supplyChanges[1]);
 // 4. The last item was added by mistake. Remove it from the 'supplyChanges' 
 //    array & console.log the value removed.
 console.log('4. Removed item:');
-supplyChanges.pop();
+// supplyChanges.pop();
 removedElement = supplyChanges.pop();
 console.log(removedElement);
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
@@ -55,6 +55,7 @@ for(let i = 0; i < supplyChanges.length;i++){
     else if(supplyChanges[i]< 0){
         console.log("Removed ", supplyChanges[i], "parts");
     }
+}
 
 
 
@@ -74,4 +75,4 @@ console.log('8. Total supplies available is:');
 //    Use a `while` loop to keep adding parts to boxes until
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
-console.log('9. Filling boxes with a "while" loop');
+// console.log('9. Filling boxes with a "while" loop');
